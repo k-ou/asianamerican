@@ -10,12 +10,20 @@
 /* Small screens */
 
 @media only screen and (min-width: 1024px) {
+    /* Summary sections for the historical timeline events. */
     .history_summary {
+        /* Width of the text box (relation to width of screen) */
         width: 70%;
+        /* Indent from top and bottom */
         padding: 60px 0px 0px 60px !important;
     }
     .history_summary p {
-        font-size: 22px;
+        font-size: 18px;
+    }
+    .history_summary p,
+    .history_summary p span {
+        /* Line height adjusted to be even for differently sized text */
+        line-height: 30px;
     }
     .history_timeline {
         margin: 100px 0px;
@@ -38,7 +46,12 @@
         padding: 80px 0px 0px 140px !important;
     }
     .history_summary p {
-        font-size: 26px;
+        font-size: 24px;
+    }
+    .history_summary p,
+    .history_summary p span {
+        /* Line height adjusted to be even for differently sized text */
+        line-height: 36px;
     }
     .history_timeline {
         height: 70vh;
@@ -359,12 +372,16 @@ h2 {
     font-size: 48px;
 }
 
+h3:not(div#quotes h3) {
+    font-family: 'Montserrat', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
 
@@ -438,89 +455,8 @@ p {
     font-size: 9.5vw;
 }
 
-#intro {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    margin: 0px;
-    /*    padding: 0px 40px;*/
-}
 
-#intro p {
-    font-size: 6vw;
-    font-family: 'Teko', sans-serif;
-    margin-bottom: 80px;
-    color: white;
-}
-
-.questions {
-    height: 200vh;
-}
-
-.questions div {
-    margin: 190px 60px;
-    text-align: center;
-}
-
-
-/* YELLOW */
-
-.yellow {
-    background-image: url("../img/yellow.svg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 250px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.intro_yellow,
-.yellow_history {
-    background-color: black;
-}
-
-.white_guys {
-    padding-top: 900px;
-    height: 400vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-
-/*
-.white_guys div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-}
-*/
-
-.yellow .whiteguy1 {
-    width: 10%;
-}
-
-.yellow .whiteguy2 {
-    width: 15%;
-}
-
-.yellow .whiteguy3 {
-    width: 13%;
-}
-
-.yellow .whiteguy4 {
-    width: 20%;
-}
-
-.yellow .whiteguy5 {
-    width: 20%;
-}
-
-
-/* The Asian-American Fight for Cultural Citizenship */
+/* "The Asian-American Fight for Cultural Citizenship" */
 
 #title_container {
     height: 300vh;
@@ -544,6 +480,13 @@ p {
     padding: 0px;
 }
 
+
+/*
+.title_box1 controls "The"
+.title_box1 controls "Asian-American"
+.title_box1 controls "Fight for Cultural Citizenship"
+*/
+
 .title_box1,
 .title_box2 {
     display: flex;
@@ -551,371 +494,63 @@ p {
     justify-content: center;
 }
 
-.title_box1 h2,
-.title_box3 h2 {
-    font-size: 96px;
-}
-
-.title_box2 {
-    background-color: black;
-    height: 300px;
-}
-
 .title_box2 h2 {
     text-transform: uppercase;
     color: #FFD000;
-    font-size: 200px;
 }
 
 .title_box3 {
     background-color: #FFD000;
-    height: 320px;
 }
 
 
-/* HISTORY */
+/* Small screens */
 
-#history_title {
-    height: 25vh;
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 100px;
-    margin-right: 40px;
-}
-
-#history_title h2 {
-    text-align: right;
-    font-size: 200px;
-}
-
-#history {
-    margin-top: 20px;
-    background-color: white;
-}
-
-.year {
-    font-size: 100px;
-    color: #FFD000;
-}
-
-.history_summary {
-    color: #333333;
-}
-
-.history_summary p {
-    font-weight: 500;
-    text-indent: -2em;
-}
-
-.history_summary span {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.history1,
-.history2,
-.history3,
-.history4,
-.history5 {
-    height: 83vh;
-}
-
-.history1 {
-    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover, cover;
-    background-position: center;
-}
-
-.history2 {
-    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("https://s-media-cache-ak0.pinimg.com/564x/f8/e1/7e/f8e17ef3aed21d9332e87a6a6e2091c6.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover, cover;
-    background-position: center;
-}
-
-.history3 {
-    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://i.vimeocdn.com/video/444419420_1280x720.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover, cover;
-    background-position: center;
-}
-
-.history_box {
-    padding-top: 100px;
-}
-
-#history h3 {
-    font-family: 'Teko', sans-serif;
-    font-size: 48px;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    line-height: 44px;
-    z-index: 100;
-}
-
-.history_box span.highlight {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.history_timeline img {
-    position: absolute;
-    max-width: 30%;
-    min-width: 24%;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
-.history_timeline img:hover {
-    transform: scale(1.1);
-    z-index: 15;
-}
-
-.history_timeline h5 {
-    z-index: 20;
-}
-
-.history_timeline h5 {
-    font-family: 'Teko', sans-serif;
-    font-size: 5vw;
-    position: absolute;
-    color: #FFD000;
-}
-
-.timeline_container {
-    position: relative;
-}
-
-.timeline_caption {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.timeline1 .timeline_box:nth-child(1) img {
-    left: 5vw;
-    top: 5vh;
-}
-
-.timeline1 .timeline_box:nth-child(1) h5 {
-    left: 5vw;
-}
-
-.timeline1 .timeline_box:nth-child(2) img {
-    left: 30vw;
-    top: 25vh;
-}
-
-.timeline1 .timeline_box:nth-child(2) h5 {
-    left: 30vw;
-    top: 20vh;
-}
-
-.timeline1 .timeline_box:nth-child(3) img {
-    right: 15vw;
-    top: 5vh;
-}
-
-.timeline1 .timeline_box:nth-child(3) h5 {
-    right: 15vw;
-}
-
-.timeline1 .timeline_box:nth-child(4) img {
-    right: 5vw;
-    top: 35vh;
-}
-
-.timeline1 .timeline_box:nth-child(4) h5 {
-    right: 5vw;
-    top: 30vh;
+@media only screen and (min-width: 1024px) {
+    /*
+.title_box1 controls "The"
+.title_box1 controls "Asian-American"
+.title_box1 controls "Fight for Cultural Citizenship"
+*/
+    .title_box1 h2,
+    .title_box3 h2 {
+        font-size: 96px;
+    }
+    .title_box2 {
+        background-color: black;
+        height: 300px;
+    }
+    .title_box2 h2 {
+        font-size: 160px;
+    }
+    .title_box3 {
+        height: 320px;
+    }
 }
 
 
-/* timeline2 */
+/* Large screens */
 
-.timeline2 img:nth-child(1) {
-    right: 20vw;
-    top: 10vh;
-}
-
-.timeline2 img:nth-child(2) {
-    left: 20vw;
-}
-
-.timeline2 h5 {
-    left: 45vw;
-}
-
-
-/* timeline 3 */
-
-.timeline3 img:nth-child(1) {
-    left: 15vw;
-    top: 25vh;
-}
-
-.timeline3 img:nth-child(2) {
-    left: 30vw;
-    top: 5vh;
-}
-
-.timeline3 img:nth-child(3) {
-    right: 15vw;
-    top: 20vh;
-}
-
-.timeline3 h5:nth-child(4) {
-    left: 15vw;
-    top: 20vh;
-}
-
-.timeline3 h5:nth-child(5) {
-    left: 30vw;
-}
-
-.timeline3 h5:nth-child(6) {
-    right: 15vw;
-    top: 15vh;
-}
-
-
-/* timeline 4 */
-
-.timeline4 img:nth-child(1) {
-    left: 20vw;
-    top: 10vh;
-}
-
-.timeline4 img:nth-child(2) {
-    left: 40vw;
-}
-
-.timeline4 img:nth-child(3) {
-    top: 30vh;
-    right: 15vw;
-}
-
-.timeline4 h5:nth-child(4) {
-    left: 20vw;
-    top: 5vh;
-}
-
-.timeline4 h5:nth-child(5) {
-    left: 40vw;
-    top: -5vh;
-}
-
-.timeline4 h5:nth-child(6) {
-    right: 15vw;
-    top: 25vh;
-}
-
-
-/* STEREOTYPES AND PERCEPTIONS IN THE MEDIA NOW */
-
-#now {
-    background-color: #FFD000;
-    margin-top: 100px;
-    padding-top: 100px;
-}
-
-#now h2 {
-    position: absolute;
-    top: -180px;
-    font-size: 124px;
-    right: 20px;
-}
-
-#now h3,
-#support h3 {
-    font-weight: 400;
-    width: 60vw;
-}
-
-#stereotype_grid {
-    margin-top: 60px;
-    margin-bottom: 100px;
-    overflow: hidden;
-}
-
-#stereotype_grid img {
-    position: absolute;
-    height: 100%;
-    width: auto;
-    filter: grayscale(100%);
-    -webkit-transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-    -ms-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
-}
-
-.stereotype {
-    position: relative;
-    overflow: hidden;
-    height: 0;
-    padding-bottom: 33%;
-    display: flex;
-    justify-content: center;
-}
-
-.stereotype .info {
-    position: absolute;
-    top: 0;
-    padding: 10%;
-    background-color: #FFD000;
-    height: 0px;
-    width: 100%;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    opacity: 0;
-}
-
-.stereotype h4 {
-    font-family: 'Teko', sans-serif;
-    font-size: 60px;
-    text-align: center;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: url(http://www.cruzine.com/wp-content/uploads/2012/04/005-free-abstract-wallpapers.jpg);
-}
-
-.stereotype:hover img {
-    transform: scale(1.1);
-}
-
-.info small,
-.info a {
-    color: #555555;
-}
-
-.info a {
-    font-style: italic;
-}
-
-.stereotype:hover .info {
-    opacity: .75;
-    height: 100%;
+@media only screen and (min-width: 1824px) {
+    /*
+.title_box1 controls "The"
+.title_box1 controls "Asian-American"
+.title_box1 controls "Fight for Cultural Citizenship"
+*/
+    .title_box1 h2,
+    .title_box3 h2 {
+        font-size: 96px;
+    }
+    .title_box2 {
+        background-color: black;
+        height: 300px;
+    }
+    .title_box2 h2 {
+        font-size: 200px;
+    }
+    .title_box3 {
+        height: 320px;
+    }
 }
 
 
@@ -1159,131 +794,6 @@ svg {
     -webkit-background-clip: text;
 }
 */
-
-#support {
-    background-color: #FFD000;
-    padding-top: 80px;
-}
-
-#support h2 {
-    position: absolute;
-    top: -170px;
-    font-size: 124px;
-    right: 20px;
-}
-
-.support_profile {
-    background-color: white;
-    margin-top: 50px;
-}
-
-.support_profile a {
-    color: black;
-}
-
-.support_profile h4,
-.support_profile h5 {
-    font-family: 'Teko', sans-serif;
-}
-
-.support_profile h4 {
-    font-size: 84px;
-    line-height: .8;
-}
-
-.support_profile h4 a,
-.support_profile p a,
-.resources_section li a {
-    box-shadow: inset 0 0 0 0 #FFD000;
-    -webkit-transition: all ease 0.8s;
-    -moz-transition: all ease 0.8s;
-    transition: all ease 0.8s;
-}
-
-.support_profile h4 a:hover {
-    box-shadow: inset 0 100px 0 0 #FFD000;
-}
-
-.support_profile h5 {
-    font-size: 48px;
-    color: grey;
-}
-
-.support_profile p {
-    font-size: 18px;
-}
-
-.support_profile p a:hover {
-    box-shadow: inset 0 24px 0 0 #FFD000;
-}
-
-.support_profile .col-sm-8 {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.support_profile img {
-    max-width: 100%;
-    width: 100%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
-.resources_title {
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-family: 'Teko', sans-serif;
-}
-
-.resources_title span {
-    font-size: 24px;
-    padding-left: 20px;
-}
-
-.resources h3 {
-    font-size: 42px;
-}
-
-.resources a {
-    text-decoration: none;
-}
-
-.resources_section {
-    height: 100%;
-    padding: 25px;
-    padding-bottom: 30px;
-}
-
-.resources_section h4 {
-    font-family: 'Teko', sans-serif;
-    font-size: 32px;
-}
-
-.resources_section ul {
-    padding-left: 15px;
-}
-
-.resources_section li {
-    padding-bottom: 10px;
-    font-size: 16px;
-}
-
-.resources_section li a {
-    padding-bottom: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #222222;
-}
-
-.resources_section li a:hover {
-    box-shadow: inset 0 18px 0 0 #FFD000;
-}
-
-#collapseResource {
-    padding-left: 40px;
-    padding-right: 40px;
-}
 
 .footer {
     background-color: #FFD000;
