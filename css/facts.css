@@ -1,0 +1,166 @@
+/* QUOTES & FACTS SECTION */
+
+.quote_box {
+    /*    margin-top: 80px;*/
+    height: 800vh;
+}
+
+.quote_speaker img {
+    max-width: 100%;
+}
+
+.quote {
+    padding: 20px;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.quote p {
+    font-family: 'Teko', sans-serif;
+    font-size: 56px;
+}
+
+
+/*test*/
+
+.facts_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400vh;
+}
+
+.complain,
+.fact,
+.something,
+.response3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.complain {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    color: red;
+}
+
+.fact {
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    color: black;
+    text-align: left;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+p.fact_p {
+    font-family: 'Teko', sans-serif;
+    font-size: 54px;
+    line-height: 48px;
+    /*
+    font-size: 42px;
+    line-height: 42px;
+*/
+    font-weight: 500;
+}
+
+p.fact_p span {
+    color: red;
+    font-weight: 500;
+}
+
+p.attribution {
+    font-family: 'Teko', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    text-align: right;
+    color: #999999;
+}
+
+.attribution span {
+    font-weight: 400;
+}
+
+.response {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 900vh;
+    background: black;
+    overflow: hidden;
+    text-align: center;
+}
+
+.response1,
+.response2,
+.response3 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.response1,
+.response2,
+.response3,
+.response5 {
+    font-family: 'Teko', sans-serif;
+    color: white;
+}
+
+.response1 div {
+    min-width: 300px;
+    width: 100px;
+}
+
+.response1 h3,
+.response2 h3,
+.response5 h3 {
+    font-size: 4vw;
+}
+
+.response3 h3 {
+    font-size: 4.5vw;
+    font-weight: 400;
+}
+
+.response3 {
+    padding-top: 100vh;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* for divs that are multiple vh long */
+
+.response5 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.response5 {
+    height: 200vh;
+}
+
+.facts {
+    padding-left: 10%;
+    color: white;
+}
