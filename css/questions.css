@@ -1,0 +1,89 @@
+#intro {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    /*    padding: 0px 40px;*/
+}
+
+#intro p {
+    font-size: 6vw;
+    font-family: 'Teko', sans-serif;
+    margin-bottom: 80px;
+    color: white;
+}
+
+.questions {
+    height: 100vh;
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1824px) {
+    .questions {
+        height: 200vh;
+    }
+}
+
+.questions div {
+    margin: 190px 60px;
+    text-align: center;
+}
+
+
+/* YELLOW */
+
+.yellow {
+    background-image: url("../img/yellow.svg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.intro_yellow,
+.yellow_history {
+    background-color: black;
+}
+
+.white_guys {
+    padding-top: 900px;
+    height: 400vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*
+.white_guys div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+*/
+
+.yellow .whiteguy1 {
+    width: 10%;
+}
+
+.yellow .whiteguy2 {
+    width: 15%;
+}
+
+.yellow .whiteguy3 {
+    width: 13%;
+}
+
+.yellow .whiteguy4 {
+    width: 20%;
+}
+
+.yellow .whiteguy5 {
+    width: 20%;
+}

@@ -1,0 +1,254 @@
+/* HISTORY */
+
+#history_title {
+    height: 25vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 40px;
+}
+
+#history_title h2 {
+    text-align: right;
+    font-size: 200px;
+}
+
+#history {
+    margin-top: 20px;
+    background-color: white;
+}
+
+.year {
+    font-size: 100px;
+    color: #FFD000;
+}
+
+.history_summary {
+    color: #333333;
+}
+
+.history_summary p {
+    font-weight: 400;
+    text-indent: -2em;
+}
+
+.history_summary span {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: 'Teko';
+}
+
+.history1,
+.history2,
+.history3,
+.history4,
+.history5 {
+    height: 83vh;
+}
+
+.history1 {
+    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover, cover;
+    background-position: center;
+}
+
+.history2 {
+    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("https://s-media-cache-ak0.pinimg.com/564x/f8/e1/7e/f8e17ef3aed21d9332e87a6a6e2091c6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover, cover;
+    background-position: center;
+}
+
+.history3 {
+    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://i.vimeocdn.com/video/444419420_1280x720.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover, cover;
+    background-position: center;
+}
+
+.history_box {
+    padding-top: 100px;
+}
+
+#history h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 48px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    line-height: 44px;
+    z-index: 100;
+}
+
+.history_box span.highlight {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.history_timeline img {
+    position: absolute;
+    max-width: 30%;
+    min-width: 24%;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.history_timeline img:hover {
+    transform: scale(1.1);
+    z-index: 15;
+}
+
+.history_timeline h5 {
+    z-index: 20;
+}
+
+.history_timeline h5 {
+    font-family: 'Teko', sans-serif;
+    font-size: 5vw;
+    position: absolute;
+    color: #FFD000;
+}
+
+.timeline_container {
+    position: relative;
+}
+
+.timeline_caption {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.timeline1 .timeline_box:nth-child(1) img {
+    left: 5vw;
+    top: 5vh;
+}
+
+.timeline1 .timeline_box:nth-child(1) h5 {
+    left: 5vw;
+}
+
+.timeline1 .timeline_box:nth-child(2) img {
+    left: 30vw;
+    top: 25vh;
+}
+
+.timeline1 .timeline_box:nth-child(2) h5 {
+    left: 30vw;
+    top: 20vh;
+}
+
+.timeline1 .timeline_box:nth-child(3) img {
+    right: 15vw;
+    top: 5vh;
+}
+
+.timeline1 .timeline_box:nth-child(3) h5 {
+    right: 15vw;
+}
+
+.timeline1 .timeline_box:nth-child(4) img {
+    right: 5vw;
+    top: 35vh;
+}
+
+.timeline1 .timeline_box:nth-child(4) h5 {
+    right: 5vw;
+    top: 30vh;
+}
+
+
+/* timeline2 */
+
+.timeline2 img:nth-child(1) {
+    right: 20vw;
+    top: 10vh;
+}
+
+.timeline2 img:nth-child(2) {
+    left: 20vw;
+}
+
+.timeline2 h5 {
+    left: 45vw;
+}
+
+
+/* timeline 3 */
+
+.timeline3 img:nth-child(1) {
+    left: 15vw;
+    top: 25vh;
+}
+
+.timeline3 img:nth-child(2) {
+    left: 30vw;
+    top: 5vh;
+}
+
+.timeline3 img:nth-child(3) {
+    right: 15vw;
+    top: 20vh;
+}
+
+.timeline3 h5:nth-child(4) {
+    left: 15vw;
+    top: 20vh;
+}
+
+.timeline3 h5:nth-child(5) {
+    left: 30vw;
+}
+
+.timeline3 h5:nth-child(6) {
+    right: 15vw;
+    top: 15vh;
+}
+
+
+/* timeline 4 */
+
+.timeline4 img:nth-child(1) {
+    left: 20vw;
+    top: 10vh;
+}
+
+.timeline4 img:nth-child(2) {
+    left: 40vw;
+}
+
+.timeline4 img:nth-child(3) {
+    top: 30vh;
+    right: 15vw;
+}
+
+.timeline4 h5:nth-child(4) {
+    left: 20vw;
+    top: 5vh;
+}
+
+.timeline4 h5:nth-child(5) {
+    left: 40vw;
+    top: -5vh;
+}
+
+.timeline4 h5:nth-child(6) {
+    right: 15vw;
+    top: 25vh;
+}
