@@ -38,6 +38,24 @@
     .support_profile {
         padding: 35px;
     }
+    /* Highlighted text is changed. */
+    /* Currently: bliack highlighted with red. */
+     ::-moz-selection {
+        color: white;
+        background: #ff4d3b;
+        /*
+        color: black;
+        background: #ffd000;
+*/
+    }
+     ::selection {
+        color: white;
+        background: #ff4d3b;
+        /*
+        color: black;
+        background: #ffd000;
+*/
+    }
 }
 
 @media only screen and (min-width: 1224px) {
