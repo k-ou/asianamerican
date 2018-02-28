@@ -110,15 +110,6 @@
     filter: grayscale(100%);
 }
 
-.history_timeline img:hover {
-    /*    transform: scale(1.1);*/
-    z-index: 15;
-}
-
-.history_timeline h5 {
-    z-index: 20;
-}
-
 .history_timeline h5 {
     font-family: 'Teko', sans-serif;
     font-size: 5vw;
@@ -131,141 +122,11 @@
 }
 
 
-/*
-.timeline1 .timeline_box:nth-child(1) img {
-    left: 5vw;
-    top: 5vh;
-}
+/* Title of timeline event */
 
-.timeline1 .timeline_box:nth-child(1) h5 {
-    left: 5vw;
-}
-
-.timeline1 .timeline_box:nth-child(2) img {
-    left: 30vw;
-    top: 25vh;
-}
-
-.timeline1 .timeline_box:nth-child(2) h5 {
-    left: 30vw;
-    top: 20vh;
-}
-
-.timeline1 .timeline_box:nth-child(3) img {
-    right: 15vw;
-    top: 5vh;
-}
-
-.timeline1 .timeline_box:nth-child(3) h5 {
-    right: 15vw;
-}
-
-.timeline1 .timeline_box:nth-child(4) img {
-    right: 5vw;
-    top: 35vh;
-}
-
-.timeline1 .timeline_box:nth-child(4) h5 {
-    right: 5vw;
-    top: 30vh;
-}
-*/
-
-
-/* timeline2 */
-
-
-/*
-.timeline2 img:nth-child(1) {
-    right: 20vw;
-    top: 10vh;
-}
-
-.timeline2 img:nth-child(2) {
-    left: 20vw;
-}
-
-.timeline2 h5 {
-    left: 45vw;
-}
-*/
-
-
-/* timeline 3 */
-
-
-/*
-.timeline3 img:nth-child(1) {
-    left: 15vw;
-    top: 25vh;
-}
-
-.timeline3 img:nth-child(2) {
-    left: 30vw;
-    top: 5vh;
-}
-
-.timeline3 img:nth-child(3) {
-    right: 15vw;
-    top: 20vh;
-}
-
-.timeline3 h5:nth-child(4) {
-    left: 15vw;
-    top: 20vh;
-}
-
-.timeline3 h5:nth-child(5) {
-    left: 30vw;
-}
-
-.timeline3 h5:nth-child(6) {
-    right: 15vw;
-    top: 15vh;
-}
-*/
-
-
-/* timeline 4 */
-
-
-/*
-.timeline4 img:nth-child(1) {
-    left: 20vw;
-    top: 10vh;
-}
-
-.timeline4 img:nth-child(2) {
-    left: 40vw;
-}
-
-.timeline4 img:nth-child(3) {
-    top: 30vh;
-    right: 15vw;
-}
-
-.timeline4 h5:nth-child(4) {
-    left: 20vw;
-    top: 5vh;
-}
-
-.timeline4 h5:nth-child(5) {
-    left: 40vw;
-    top: -5vh;
-}
-
-.timeline4 h5:nth-child(6) {
-    right: 15vw;
-    top: 25vh;
-}
-*/
-
-
-/*
 .timeline_textbox {
     padding: 20px;
 }
-*/
 
 .history_timeline h6 {
     font-size: 36px;
@@ -274,12 +135,13 @@
 
 .timeline_caption {
     position: absolute;
-    top: 0px;
-    height: 100%;
+    bottom: -100px;
+    /*    height: 100%;*/
     width: 100%;
     background-color: #FFD000;
     padding: 40px;
     opacity: 0;
+    overflow-y: scroll;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -292,13 +154,7 @@
 .timeline1_img3,
 .timeline1_img4 {
     position: relative;
-}
-
-.timeline1_img1 div,
-.timeline1_img2 div,
-.timeline1_img3 div,
-.timeline1_img4 div {
-    object-fit: cover;
+    overflow: hidden;
 }
 
 .timeline1_img1:hover .timeline_caption,
@@ -306,6 +162,7 @@
 .timeline1_img3:hover .timeline_caption,
 .timeline1_img4:hover .timeline_caption {
     opacity: 0.8;
+    bottom: 0px;
 }
 
 .timeline1 {
@@ -315,7 +172,78 @@
     width: 100%;
     grid-gap: 20px;
     /*    grid-auto-flow: column;*/
+    grid-template-rows: repeat(auto-fill, minmax(240px, auto));
 }
+
+
+/* Timeline background-images */
+
+.timeline_img {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.timeline1_img1 {
+    background-image: url("http://www.usnook.com/uploads/allimg/131024/50-131024130953B8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.timeline1_img2 {
+    background-image: url("http://farm3.staticflickr.com/2474/3975812755_84da2936ca.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.timeline1_img3 {
+    background-image: url("http://www.theconstitutionproject.com/wordpress/wp-content/gallery/yick-wo/7002.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.timeline1_img4 {
+    background-image: url("http://images1.laweekly.com/imager/negro-alley-where-the-massacre-began/u/745xauto/2169481/6074470.t.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Title of timeline event coloring */
+
+.timeline1_text1,
+.timeline1_text4 {
+    background-color: #333333;
+}
+
+.timeline1_text1 h6,
+.timeline1_text4 h6 {
+    color: white;
+}
+
+.timeline1_text2,
+.timeline1_text3 {
+    background-color: #ffd000;
+}
+
+.timeline1_text2 h5,
+.timeline1_text3 h5 {
+    color: #333333;
+}
+
+.timeline1_text2 h6,
+.timeline1_text3 h6 {
+    color: white;
+}
+
+
+/* Timeline event specific placement */
 
 .timeline1_img1,
 .timeline1_text1 {
