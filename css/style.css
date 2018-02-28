@@ -28,7 +28,7 @@
     .history_timeline {
         margin: 100px 0px;
         /*        height: 50vh;*/
-        height: 1200px;
+        /*        height: 1200px;*/
     }
     #now h2 {
         position: absolute;
@@ -73,7 +73,7 @@
         line-height: 36px;
     }
     .history_timeline {
-        height: 1200px;
+        /*        height: 1200px;*/
     }
     .support_profile {
         padding: 50px;
@@ -705,24 +705,6 @@ svg {
     }
     .history_summary span {
         font-size: 58px;
-    }
-    /* timeline2 */
-    .timeline2 img:nth-child(1) {
-        right: 25vw;
-    }
-    .timeline2 img:nth-child(2) {
-        left: 25vw;
-    }
-    .timeline3 {
-        height: 80vh;
-    }
-    .timeline3 img:nth-child(3) {
-        right: 20vw;
-        top: 15vh;
-    }
-    .timeline3 h5:nth-child(6) {
-        right: 20vw;
-        top: 10vh;
     }
     /* stereotype */
     .stereotype .info {
