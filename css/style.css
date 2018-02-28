@@ -1,34 +1,11 @@
 /* Mobile screens */
 
-@media only screen and (min-width: 320px) and (max-width: 991px) {
-    #history {
-        padding: 0px;
-    }
-}
+@media only screen and (min-width: 320px) and (max-width: 991px) {}
 
 
 /* Small screens */
 
 @media only screen and (min-width: 1024px) {
-    /* Summary sections for the historical timeline events. */
-    .history_summary {
-        /* Width of the text box (relation to width of screen) */
-        width: 70%;
-        /* Indent from top and bottom */
-        padding: 60px 0px 0px 60px !important;
-    }
-    .history_summary p {
-        font-size: 18px;
-    }
-    .history_summary p,
-    .history_summary p span {
-        /* Line height adjusted to be even for differently sized text */
-        line-height: 30px;
-    }
-    .history_timeline {
-        margin: 100px 0px;
-        height: 50vh;
-    }
     #now h2 {
         position: absolute;
         top: -180px;
@@ -59,21 +36,6 @@
 }
 
 @media only screen and (min-width: 1224px) {
-    .history_summary {
-        width: 70%;
-        padding: 80px 0px 0px 140px !important;
-    }
-    .history_summary p {
-        font-size: 24px;
-    }
-    .history_summary p,
-    .history_summary p span {
-        /* Line height adjusted to be even for differently sized text */
-        line-height: 36px;
-    }
-    .history_timeline {
-        height: 70vh;
-    }
     .support_profile {
         padding: 50px;
     }
@@ -694,34 +656,6 @@ svg {
     }
     .title_box2 h2 {
         font-size: 9vw;
-    }
-    /* history */
-    .history_summary {
-        width: 50%;
-    }
-    .history_summary p {
-        font-size: 32px;
-    }
-    .history_summary span {
-        font-size: 58px;
-    }
-    /* timeline2 */
-    .timeline2 img:nth-child(1) {
-        right: 25vw;
-    }
-    .timeline2 img:nth-child(2) {
-        left: 25vw;
-    }
-    .timeline3 {
-        height: 80vh;
-    }
-    .timeline3 img:nth-child(3) {
-        right: 20vw;
-        top: 15vh;
-    }
-    .timeline3 h5:nth-child(6) {
-        right: 20vw;
-        top: 10vh;
     }
     /* stereotype */
     .stereotype .info {

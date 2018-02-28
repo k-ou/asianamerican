@@ -1,5 +1,70 @@
 /* HISTORY */
 
+
+/* Mobile screens */
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    #history {
+        padding: 0px;
+    }
+}
+
+
+/* Small screens */
+
+@media only screen and (min-width: 1024px) {
+    /* Summary sections for the historical timeline events. */
+    .history_summary {
+        /* Width of the text box (relation to width of screen) */
+        width: 70%;
+        /* Indent from top and bottom */
+        padding: 60px 0px 0px 60px !important;
+    }
+    .history_summary p {
+        font-size: 18px;
+    }
+    .history_summary p,
+    .history_summary p span {
+        /* Line height adjusted to be even for differently sized text */
+        line-height: 30px;
+    }
+    .history_timeline {
+        margin: 100px 0px;
+        /*        height: 50vh;*/
+        /*        height: 1200px;*/
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    .history_summary {
+        width: 70%;
+        padding: 80px 0px 0px 140px !important;
+    }
+    .history_summary p {
+        font-size: 24px;
+    }
+    .history_summary p,
+    .history_summary p span {
+        /* Line height adjusted to be even for differently sized text */
+        line-height: 36px;
+    }
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1824px) {
+    .history_summary {
+        width: 50%;
+    }
+    .history_summary p {
+        font-size: 32px;
+    }
+    .history_summary span {
+        font-size: 58px;
+    }
+}
+
 #history_title {
     height: 25vh;
     background-color: white;
@@ -22,7 +87,7 @@
 }
 
 .year {
-    font-size: 100px;
+    font-size: 136px;
     color: #FFD000;
 }
 
@@ -78,7 +143,7 @@
 }
 
 .history_box {
-    padding-top: 100px;
+    padding-top: 136px;
 }
 
 #history h3 {
@@ -97,9 +162,10 @@
 }
 
 .history_timeline img {
-    position: absolute;
-    max-width: 30%;
-    min-width: 24%;
+    /*    position: absolute;*/
+    /*    max-width: 30%;*/
+    /*    min-width: 24%;*/
+    max-width: 100%;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -109,19 +175,10 @@
     filter: grayscale(100%);
 }
 
-.history_timeline img:hover {
-    transform: scale(1.1);
-    z-index: 15;
-}
-
-.history_timeline h5 {
-    z-index: 20;
-}
-
 .history_timeline h5 {
     font-family: 'Teko', sans-serif;
     font-size: 5vw;
-    position: absolute;
+    /*    position: absolute;*/
     color: #FFD000;
 }
 
@@ -129,126 +186,314 @@
     position: relative;
 }
 
+
+/* Title of timeline event */
+
+.timeline_textbox {
+    padding: 20px;
+}
+
+.history_timeline h6 {
+    font-size: 36px;
+    font-family: 'Teko', sans-serif;
+}
+
 .timeline_caption {
     position: absolute;
-    height: 100%;
+    bottom: -100px;
+    /*    height: 100%;*/
     width: 100%;
+    background-color: #FFD000;
+    padding: 40px;
+    opacity: 0;
+    overflow-y: scroll;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
-.timeline1 .timeline_box:nth-child(1) img {
-    left: 5vw;
-    top: 5vh;
+.timeline_img {
+    position: relative;
+    overflow: hidden;
 }
 
-.timeline1 .timeline_box:nth-child(1) h5 {
-    left: 5vw;
-}
-
-.timeline1 .timeline_box:nth-child(2) img {
-    left: 30vw;
-    top: 25vh;
-}
-
-.timeline1 .timeline_box:nth-child(2) h5 {
-    left: 30vw;
-    top: 20vh;
-}
-
-.timeline1 .timeline_box:nth-child(3) img {
-    right: 15vw;
-    top: 5vh;
-}
-
-.timeline1 .timeline_box:nth-child(3) h5 {
-    right: 15vw;
-}
-
-.timeline1 .timeline_box:nth-child(4) img {
-    right: 5vw;
-    top: 35vh;
-}
-
-.timeline1 .timeline_box:nth-child(4) h5 {
-    right: 5vw;
-    top: 30vh;
+.timeline_img:hover .timeline_caption {
+    opacity: 0.8;
+    bottom: 0px;
 }
 
 
-/* timeline2 */
+/* TIMELINE GRID */
 
-.timeline2 img:nth-child(1) {
-    right: 20vw;
-    top: 10vh;
+.history_timeline {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /*    grid-auto-rows: 400px;*/
+    width: 100%;
+    grid-gap: 20px;
+    /*    grid-auto-flow: column;*/
+    grid-template-rows: minmax(240px, auto);
 }
 
-.timeline2 img:nth-child(2) {
-    left: 20vw;
-}
-
-.timeline2 h5 {
-    left: 45vw;
-}
-
-
-/* timeline 3 */
-
-.timeline3 img:nth-child(1) {
-    left: 15vw;
-    top: 25vh;
-}
-
-.timeline3 img:nth-child(2) {
-    left: 30vw;
-    top: 5vh;
-}
-
-.timeline3 img:nth-child(3) {
-    right: 15vw;
-    top: 20vh;
-}
-
-.timeline3 h5:nth-child(4) {
-    left: 15vw;
-    top: 20vh;
-}
-
-.timeline3 h5:nth-child(5) {
-    left: 30vw;
-}
-
-.timeline3 h5:nth-child(6) {
-    right: 15vw;
-    top: 15vh;
+.timeline2,
+.timeline4 {
+    grid-template-rows: minmax(600px, auto);
 }
 
 
-/* timeline 4 */
+/* TIMELINE BACKGROUND IMAGES*/
 
-.timeline4 img:nth-child(1) {
-    left: 20vw;
-    top: 10vh;
+.timeline_img {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
-.timeline4 img:nth-child(2) {
-    left: 40vw;
+.timeline1_img1 {
+    background-image: url("http://www.usnook.com/uploads/allimg/131024/50-131024130953B8.png");
 }
 
-.timeline4 img:nth-child(3) {
-    top: 30vh;
-    right: 15vw;
+.timeline1_img2 {
+    background-image: url("http://farm3.staticflickr.com/2474/3975812755_84da2936ca.jpg");
 }
 
-.timeline4 h5:nth-child(4) {
-    left: 20vw;
-    top: 5vh;
+.timeline1_img3 {
+    background-image: url("http://www.theconstitutionproject.com/wordpress/wp-content/gallery/yick-wo/7002.jpg");
+    min-height: 260px;
 }
 
-.timeline4 h5:nth-child(5) {
-    left: 40vw;
-    top: -5vh;
+.timeline1_img4 {
+    background-image: url("http://images1.laweekly.com/imager/negro-alley-where-the-massacre-began/u/745xauto/2169481/6074470.t.jpg");
 }
 
-.timeline4 h5:nth-child(6) {
-    right: 15vw;
-    top: 25vh;
+.timeline2_img1 {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/564x/b4/28/dd/b428dd05c978e76925a5ff83f030cef9.jpg");
+}
+
+.timeline2_img2 {
+    background-image: url("http://www.harpweek.com/Images/SourceImages/CartoonOfTheDay/February/021871m.jpg");
+}
+
+.timeline3_img1 {
+    background-image: url("http://2.bp.blogspot.com/-8HA3LN49ROE/UDxcxm_FtrI/AAAAAAAABuE/0vL52ys9s2Q/s1600/Wintersburg+-+Alien+Land+Law+of+1913+news+clip+-+SF+Call+May+2+1913.jpg");
+}
+
+.timeline3_img2 {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/564x/2d/b2/ca/2db2ca6746c8bde92b1bb8de95718bee.jpg");
+}
+
+.timeline3_img3 {
+    background-image: url("https://userscontent2.emaze.com/images/88f46322-9983-4d81-b0b7-1d684bd5a39a/a345c1d49453352a96ef4e3b6d6aeca4.jpg");
+}
+
+.timeline4_img1 {
+    background-image: url("https://i.ytimg.com/vi/96nXXjww5c0/hqdefault.jpg");
+}
+
+.timeline4_img2 {
+    background-image: url("https://abagond.files.wordpress.com/2008/05/time-asianamwhizkids.jpg");
+}
+
+.timeline4_img3 {
+    background-image: url("https://media3.s-nbcnews.com/i/newscms/2017_24/2039616/vincentchinbwhead_1_bea5fe1e606117cbd8bd9c56636a7f9f.jpg");
+}
+
+.timeline_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* TIMELINE EVENT TITLE STYLING - TIMELINE 01 */
+
+.timeline1_text1,
+.timeline1_text4 {
+    background-color: #333333;
+}
+
+.timeline1_text1 h6,
+.timeline1_text4 h6 {
+    color: white;
+}
+
+.timeline1_text2,
+.timeline1_text3 {
+    background-color: #ffd000;
+}
+
+.timeline1_text2 h5,
+.timeline1_text3 h5 {
+    color: #333333;
+}
+
+.timeline1_text2 h6,
+.timeline1_text3 h6 {
+    color: white;
+}
+
+
+/* TIMELINE EVENT TITLE STYLING - TIMELINE 02 */
+
+.timeline2_text1,
+.timeline2_text2 {
+    background-color: #333333;
+}
+
+.timeline2_text1 h6,
+.timeline2_text2 h6 {
+    color: white;
+}
+
+
+/* TIMELINE EVENT TITLE STYLING - TIMELINE 03 / 04 */
+
+.timeline3_text1,
+.timeline3_text2,
+.timeline3_text3,
+.timeline4_text1,
+.timeline4_text2,
+.timeline4_text3 {
+    background-color: #333333;
+}
+
+.timeline3_text1 h6,
+.timeline3_text2 h6,
+.timeline3_text3 h6,
+.timeline4_text1 h6,
+.timeline4_text2 h6,
+.timeline4_text3 h6 {
+    color: white;
+}
+
+
+/* TIMELINE EVENT PLACEMENT - TIMELINE 01 */
+
+.timeline1_img1,
+.timeline1_text1 {
+    grid-row: 1 / 3;
+}
+
+.timeline1_img1 {
+    grid-column: 1 / 4;
+}
+
+.timeline1_img2,
+.timeline1_text2 {
+    grid-column: 5 / 7;
+}
+
+.timeline1_img3,
+.timeline1_text3 {
+    grid-column: 1 / 3;
+}
+
+.timeline1_img3 {
+    grid-row: 3 / 4;
+}
+
+.timeline1_text3 {
+    grid-row: 4 / 5;
+}
+
+.timeline1_img4,
+.timeline1_text4 {
+    grid-row: 3 / 5;
+}
+
+.timeline1_img4 {
+    grid-column: 3 / 6;
+}
+
+.timeline1_text4 {
+    grid-column: 6 / 7;
+}
+
+
+/* TIMELINE EVENT PLACEMENT - TIMELINE 02 */
+
+.timeline2_img1 {
+    grid-column: 1 / 3;
+}
+
+.timeline2_text1 {
+    grid-column: 3 / 4;
+}
+
+.timeline2_img2 {
+    grid-column: 4 / 6;
+}
+
+.timeline2_text2 {
+    grid-column: 6 / 7;
+}
+
+
+/* TIMELINE EVENT PLACEMENT - TIMELINE 03 */
+
+.timeline3_img1,
+.timeline3_text1 {
+    grid-row: 1 / 2;
+}
+
+.timeline3_img1,
+.timeline3_img2 {
+    grid-column: 1 / 3;
+}
+
+.timeline3_text1,
+.timeline3_text2 {
+    grid-column: 3 / 4;
+}
+
+.timeline3_img2,
+.timeline3_text2 {
+    grid-row: 2 / 3;
+}
+
+.timeline3_img3,
+.timeline3_text3 {
+    grid-row: 1 / 3;
+}
+
+.timeline3_img3 {
+    grid-column: 4 / 6;
+}
+
+.timeline3_text3 {
+    grid-column: 6 / 7;
+}
+
+
+/* TIMELINE EVENT PLACEMENT - TIMELINE 04 */
+
+.timeline4_img1,
+.timeline4_img2,
+.timeline4_img3 {
+    grid-row: 1 / 2;
+}
+
+.timeline4_text1,
+.timeline4_text2,
+.timeline4_text3 {
+    grid-row: 2 / 3;
+}
+
+.timeline4_img1,
+.timeline4_text1 {
+    grid-column: 1 / 3;
+}
+
+.timeline4_img2,
+.timeline4_text2 {
+    grid-column: 3 / 5;
+}
+
+.timeline4_img3,
+.timeline4_text3 {
+    grid-column: 5 / 7;
 }
