@@ -10,6 +10,363 @@
 }
 
 
+/* Mobile screens */
+
+@media only screen and (min-width: 320px) {
+    /* Container for heading for section */
+    #history_title {
+        height: 25vh;
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 100px;
+        margin-right: 40px;
+    }
+    /* Heading for section */
+    #history_title h2 {
+        text-align: right;
+        font-size: 200px;
+    }
+    /* Entire section following header */
+    #history {
+        margin-top: 20px;
+        background-color: white;
+    }
+    /* Container for each main hero section (with the hero images) */
+    .history_box {
+        /* Adjusts content to allow offset of header */
+        padding-top: 136px;
+    }
+    /* The heading preceding each main section */
+    .year {
+        font-size: 136px;
+        color: #FFD000;
+    }
+    #history h3 {
+        font-family: "Teko", sans-serif;
+        font-size: 48px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        line-height: 44px;
+        z-index: 100;
+    }
+    /* Gives space on left and right side of event name with highlighted look */
+    .history_box span.highlight {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* The main history sections (with the hero images) */
+    .history1,
+    .history2,
+    .history3,
+    .history4,
+    .history5 {
+        height: 83vh;
+    }
+    .history1 {
+        background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover, cover;
+        background-position: center;
+    }
+    .history2 {
+        background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("https://s-media-cache-ak0.pinimg.com/564x/f8/e1/7e/f8e17ef3aed21d9332e87a6a6e2091c6.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover, cover;
+        background-position: center;
+    }
+    .history3 {
+        background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://i.vimeocdn.com/video/444419420_1280x720.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover, cover;
+        background-position: center;
+    }
+    /* The paragraph of text following each main history section */
+    .history_summary {
+        color: #333333;
+    }
+    .history_summary p {
+        font-weight: 400;
+        text-indent: -2em;
+    }
+    .history_summary span {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 1.1;
+        font-family: "Teko", sans-serif;
+    }
+    /* TIMELINE GRID */
+    .history_timeline {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        /*    grid-auto-rows: 400px;*/
+        width: 100%;
+        grid-gap: 20px;
+        /*    grid-auto-flow: column;*/
+        grid-template-rows: minmax(240px, auto);
+    }
+    .timeline2,
+    .timeline4 {
+        grid-template-rows: minmax(600px, auto);
+    }
+    /* Title of timeline event */
+    .timeline_textbox {
+        padding: 20px;
+    }
+    /* Year */
+    .history_timeline h5,
+    .history_timeline h6 {
+        font-family: "Teko", sans-serif;
+    }
+    .history_timeline h5 {
+        font-size: 5vw;
+        color: #FFD000;
+    }
+    /* Name */
+    .history_timeline h6 {
+        font-size: 36px;
+    }
+    /* Captions for timeline images that appear on hover */
+    .timeline_caption {
+        position: absolute;
+        bottom: -100px;
+        /*    height: 100%;*/
+        width: 100%;
+        background-color: #FFD000;
+        padding: 40px;
+        opacity: 0;
+        overflow-y: scroll;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+    .timeline_caption::-webkit-scrollbar {
+        background-color: transparent;
+    }
+    .timeline_img:hover .timeline_caption {
+        opacity: 0.8;
+        bottom: 0px;
+    }
+    /*
+    .timeline_img {
+        max-width: 100%;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+*/
+    /* TIMELINE BACKGROUND IMAGES*/
+    .timeline_img {
+        position: relative;
+        overflow: hidden;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+    .timeline1_img1 {
+        background-image: url("http://www.usnook.com/uploads/allimg/131024/50-131024130953B8.png");
+    }
+    .timeline1_img2 {
+        background-image: url("http://farm3.staticflickr.com/2474/3975812755_84da2936ca.jpg");
+    }
+    .timeline1_img3 {
+        background-image: url("http://www.theconstitutionproject.com/wordpress/wp-content/gallery/yick-wo/7002.jpg");
+        min-height: 260px;
+    }
+    .timeline1_img4 {
+        background-image: url("http://images1.laweekly.com/imager/negro-alley-where-the-massacre-began/u/745xauto/2169481/6074470.t.jpg");
+    }
+    .timeline2_img1 {
+        background-image: url("https://s-media-cache-ak0.pinimg.com/564x/b4/28/dd/b428dd05c978e76925a5ff83f030cef9.jpg");
+    }
+    .timeline2_img2 {
+        background-image: url("http://www.harpweek.com/Images/SourceImages/CartoonOfTheDay/February/021871m.jpg");
+    }
+    .timeline3_img1 {
+        background-image: url("http://2.bp.blogspot.com/-8HA3LN49ROE/UDxcxm_FtrI/AAAAAAAABuE/0vL52ys9s2Q/s1600/Wintersburg+-+Alien+Land+Law+of+1913+news+clip+-+SF+Call+May+2+1913.jpg");
+    }
+    .timeline3_img2 {
+        background-image: url("https://s-media-cache-ak0.pinimg.com/564x/2d/b2/ca/2db2ca6746c8bde92b1bb8de95718bee.jpg");
+    }
+    .timeline3_img3 {
+        background-image: url("https://userscontent2.emaze.com/images/88f46322-9983-4d81-b0b7-1d684bd5a39a/a345c1d49453352a96ef4e3b6d6aeca4.jpg");
+    }
+    .timeline4_img1 {
+        background-image: url("https://i.ytimg.com/vi/96nXXjww5c0/hqdefault.jpg");
+    }
+    .timeline4_img2 {
+        background-image: url("https://abagond.files.wordpress.com/2008/05/time-asianamwhizkids.jpg");
+    }
+    .timeline4_img3 {
+        background-image: url("https://media3.s-nbcnews.com/i/newscms/2017_24/2039616/vincentchinbwhead_1_bea5fe1e606117cbd8bd9c56636a7f9f.jpg");
+    }
+    .timeline_img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* TIMELINE EVENT TITLE STYLING - TIMELINE 01 */
+    .timeline1_text1,
+    .timeline1_text4 {
+        background-color: #333333;
+    }
+    .timeline1_text1 h6,
+    .timeline1_text4 h6 {
+        color: white;
+    }
+    .timeline1_text2,
+    .timeline1_text3 {
+        background-color: #ffd000;
+    }
+    .timeline1_text2 h5,
+    .timeline1_text3 h5 {
+        color: #333333;
+    }
+    .timeline1_text2 h6,
+    .timeline1_text3 h6 {
+        color: white;
+    }
+    /* TIMELINE EVENT TITLE STYLING - TIMELINE 02 */
+    .timeline2_text1,
+    .timeline2_text2 {
+        background-color: #333333;
+    }
+    .timeline2_text1 h6,
+    .timeline2_text2 h6 {
+        color: white;
+    }
+    /* TIMELINE EVENT TITLE STYLING - TIMELINE 03 / 04 */
+    .timeline3_text1,
+    .timeline3_text2,
+    .timeline3_text3,
+    .timeline4_text1,
+    .timeline4_text2,
+    .timeline4_text3 {
+        background-color: #333333;
+    }
+    .timeline3_text1 h6,
+    .timeline3_text2 h6,
+    .timeline3_text3 h6,
+    .timeline4_text1 h6,
+    .timeline4_text2 h6,
+    .timeline4_text3 h6 {
+        color: white;
+    }
+    /* TIMELINE EVENT PLACEMENT - TIMELINE 01 */
+    .timeline1_img1,
+    .timeline1_text1 {
+        grid-row: 1 / 3;
+    }
+    .timeline1_img1 {
+        grid-column: 1 / 4;
+    }
+    .timeline1_img2,
+    .timeline1_text2 {
+        grid-column: 5 / 7;
+    }
+    .timeline1_img3,
+    .timeline1_text3 {
+        grid-column: 1 / 3;
+    }
+    .timeline1_img3 {
+        grid-row: 3 / 4;
+    }
+    .timeline1_text3 {
+        grid-row: 4 / 5;
+    }
+    .timeline1_img4,
+    .timeline1_text4 {
+        grid-row: 3 / 5;
+    }
+    .timeline1_img4 {
+        grid-column: 3 / 6;
+    }
+    .timeline1_text4 {
+        grid-column: 6 / 7;
+    }
+    /* TIMELINE EVENT PLACEMENT - TIMELINE 02 */
+    .timeline2_img1 {
+        grid-column: 1 / 3;
+    }
+    .timeline2_text1 {
+        grid-column: 3 / 4;
+    }
+    .timeline2_img2 {
+        grid-column: 4 / 6;
+    }
+    .timeline2_text2 {
+        grid-column: 6 / 7;
+    }
+    /* TIMELINE EVENT PLACEMENT - TIMELINE 03 */
+    .timeline3_img1,
+    .timeline3_text1 {
+        grid-row: 1 / 2;
+    }
+    .timeline3_img1,
+    .timeline3_img2 {
+        grid-column: 1 / 3;
+    }
+    .timeline3_text1,
+    .timeline3_text2 {
+        grid-column: 3 / 4;
+    }
+    .timeline3_img2,
+    .timeline3_text2 {
+        grid-row: 2 / 3;
+    }
+    .timeline3_img3,
+    .timeline3_text3 {
+        grid-row: 1 / 3;
+    }
+    .timeline3_img3 {
+        grid-column: 4 / 6;
+    }
+    .timeline3_text3 {
+        grid-column: 6 / 7;
+    }
+    /* TIMELINE EVENT PLACEMENT - TIMELINE 04 */
+    .timeline4_img1,
+    .timeline4_img2,
+    .timeline4_img3 {
+        grid-row: 1 / 2;
+    }
+    .timeline4_text1,
+    .timeline4_text2,
+    .timeline4_text3 {
+        grid-row: 2 / 3;
+    }
+    .timeline4_img1,
+    .timeline4_text1 {
+        grid-column: 1 / 3;
+    }
+    .timeline4_img2,
+    .timeline4_text2 {
+        grid-column: 3 / 5;
+    }
+    .timeline4_img3,
+    .timeline4_text3 {
+        grid-column: 5 / 7;
+    }
+}
+
+
 /* Small screens */
 
 @media only screen and (min-width: 1024px) {
@@ -54,449 +411,36 @@
 /* Large screens */
 
 @media only screen and (min-width: 1824px) {
+    /* Event name before main history section */
+    #history h3 {
+        font-size: 86px;
+        top: -20px;
+        line-height: 82px;
+    }
     .history_summary {
-        width: 50%;
+        width: 60%;
     }
     .history_summary p {
         font-size: 32px;
     }
     .history_summary span {
-        font-size: 58px;
+        font-size: 70px;
     }
-}
-
-#history_title {
-    height: 25vh;
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 100px;
-    margin-right: 40px;
-}
-
-#history_title h2 {
-    text-align: right;
-    font-size: 200px;
-}
-
-#history {
-    margin-top: 20px;
-    background-color: white;
-}
-
-.year {
-    font-size: 136px;
-    color: #FFD000;
-}
-
-.history_summary {
-    color: #333333;
-}
-
-.history_summary p {
-    font-weight: 400;
-    text-indent: -2em;
-}
-
-.history_summary span {
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 1.1;
-    font-family: 'Teko';
-}
-
-.history1,
-.history2,
-.history3,
-.history4,
-.history5 {
-    height: 83vh;
-}
-
-.history1 {
-    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover, cover;
-    background-position: center;
-}
-
-.history2 {
-    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("https://s-media-cache-ak0.pinimg.com/564x/f8/e1/7e/f8e17ef3aed21d9332e87a6a6e2091c6.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover, cover;
-    background-position: center;
-}
-
-.history3 {
-    background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://i.vimeocdn.com/video/444419420_1280x720.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover, cover;
-    background-position: center;
-}
-
-.history_box {
-    padding-top: 136px;
-}
-
-#history h3 {
-    font-family: 'Teko', sans-serif;
-    font-size: 48px;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    line-height: 44px;
-    z-index: 100;
-}
-
-.history_box span.highlight {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.history_timeline img {
-    /*    position: absolute;*/
-    /*    max-width: 30%;*/
-    /*    min-width: 24%;*/
-    max-width: 100%;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
-.history_timeline h5 {
-    font-family: 'Teko', sans-serif;
-    font-size: 5vw;
-    /*    position: absolute;*/
-    color: #FFD000;
-}
-
-.timeline_container {
-    position: relative;
-}
-
-
-/* Title of timeline event */
-
-.timeline_textbox {
-    padding: 20px;
-}
-
-.history_timeline h6 {
-    font-size: 36px;
-    font-family: 'Teko', sans-serif;
-}
-
-.timeline_caption {
-    position: absolute;
-    bottom: -100px;
-    /*    height: 100%;*/
-    width: 100%;
-    background-color: #FFD000;
-    padding: 40px;
-    opacity: 0;
-    overflow-y: scroll;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-.timeline_caption::-webkit-scrollbar {
-    background-color: transparent;
-}
-
-.timeline_img {
-    position: relative;
-    overflow: hidden;
-}
-
-.timeline_img:hover .timeline_caption {
-    opacity: 0.8;
-    bottom: 0px;
-}
-
-
-/* TIMELINE GRID */
-
-.history_timeline {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    /*    grid-auto-rows: 400px;*/
-    width: 100%;
-    grid-gap: 20px;
-    /*    grid-auto-flow: column;*/
-    grid-template-rows: minmax(240px, auto);
-}
-
-.timeline2,
-.timeline4 {
-    grid-template-rows: minmax(600px, auto);
-}
-
-
-/* TIMELINE BACKGROUND IMAGES*/
-
-.timeline_img {
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-.timeline1_img1 {
-    background-image: url("http://www.usnook.com/uploads/allimg/131024/50-131024130953B8.png");
-}
-
-.timeline1_img2 {
-    background-image: url("http://farm3.staticflickr.com/2474/3975812755_84da2936ca.jpg");
-}
-
-.timeline1_img3 {
-    background-image: url("http://www.theconstitutionproject.com/wordpress/wp-content/gallery/yick-wo/7002.jpg");
-    min-height: 260px;
-}
-
-.timeline1_img4 {
-    background-image: url("http://images1.laweekly.com/imager/negro-alley-where-the-massacre-began/u/745xauto/2169481/6074470.t.jpg");
-}
-
-.timeline2_img1 {
-    background-image: url("https://s-media-cache-ak0.pinimg.com/564x/b4/28/dd/b428dd05c978e76925a5ff83f030cef9.jpg");
-}
-
-.timeline2_img2 {
-    background-image: url("http://www.harpweek.com/Images/SourceImages/CartoonOfTheDay/February/021871m.jpg");
-}
-
-.timeline3_img1 {
-    background-image: url("http://2.bp.blogspot.com/-8HA3LN49ROE/UDxcxm_FtrI/AAAAAAAABuE/0vL52ys9s2Q/s1600/Wintersburg+-+Alien+Land+Law+of+1913+news+clip+-+SF+Call+May+2+1913.jpg");
-}
-
-.timeline3_img2 {
-    background-image: url("https://s-media-cache-ak0.pinimg.com/564x/2d/b2/ca/2db2ca6746c8bde92b1bb8de95718bee.jpg");
-}
-
-.timeline3_img3 {
-    background-image: url("https://userscontent2.emaze.com/images/88f46322-9983-4d81-b0b7-1d684bd5a39a/a345c1d49453352a96ef4e3b6d6aeca4.jpg");
-}
-
-.timeline4_img1 {
-    background-image: url("https://i.ytimg.com/vi/96nXXjww5c0/hqdefault.jpg");
-}
-
-.timeline4_img2 {
-    background-image: url("https://abagond.files.wordpress.com/2008/05/time-asianamwhizkids.jpg");
-}
-
-.timeline4_img3 {
-    background-image: url("https://media3.s-nbcnews.com/i/newscms/2017_24/2039616/vincentchinbwhead_1_bea5fe1e606117cbd8bd9c56636a7f9f.jpg");
-}
-
-.timeline_img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-/* TIMELINE EVENT TITLE STYLING - TIMELINE 01 */
-
-.timeline1_text1,
-.timeline1_text4 {
-    background-color: #333333;
-}
-
-.timeline1_text1 h6,
-.timeline1_text4 h6 {
-    color: white;
-}
-
-.timeline1_text2,
-.timeline1_text3 {
-    background-color: #ffd000;
-}
-
-.timeline1_text2 h5,
-.timeline1_text3 h5 {
-    color: #333333;
-}
-
-.timeline1_text2 h6,
-.timeline1_text3 h6 {
-    color: white;
-}
-
-
-/* TIMELINE EVENT TITLE STYLING - TIMELINE 02 */
-
-.timeline2_text1,
-.timeline2_text2 {
-    background-color: #333333;
-}
-
-.timeline2_text1 h6,
-.timeline2_text2 h6 {
-    color: white;
-}
-
-
-/* TIMELINE EVENT TITLE STYLING - TIMELINE 03 / 04 */
-
-.timeline3_text1,
-.timeline3_text2,
-.timeline3_text3,
-.timeline4_text1,
-.timeline4_text2,
-.timeline4_text3 {
-    background-color: #333333;
-}
-
-.timeline3_text1 h6,
-.timeline3_text2 h6,
-.timeline3_text3 h6,
-.timeline4_text1 h6,
-.timeline4_text2 h6,
-.timeline4_text3 h6 {
-    color: white;
-}
-
-
-/* TIMELINE EVENT PLACEMENT - TIMELINE 01 */
-
-.timeline1_img1,
-.timeline1_text1 {
-    grid-row: 1 / 3;
-}
-
-.timeline1_img1 {
-    grid-column: 1 / 4;
-}
-
-.timeline1_img2,
-.timeline1_text2 {
-    grid-column: 5 / 7;
-}
-
-.timeline1_img3,
-.timeline1_text3 {
-    grid-column: 1 / 3;
-}
-
-.timeline1_img3 {
-    grid-row: 3 / 4;
-}
-
-.timeline1_text3 {
-    grid-row: 4 / 5;
-}
-
-.timeline1_img4,
-.timeline1_text4 {
-    grid-row: 3 / 5;
-}
-
-.timeline1_img4 {
-    grid-column: 3 / 6;
-}
-
-.timeline1_text4 {
-    grid-column: 6 / 7;
-}
-
-
-/* TIMELINE EVENT PLACEMENT - TIMELINE 02 */
-
-.timeline2_img1 {
-    grid-column: 1 / 3;
-}
-
-.timeline2_text1 {
-    grid-column: 3 / 4;
-}
-
-.timeline2_img2 {
-    grid-column: 4 / 6;
-}
-
-.timeline2_text2 {
-    grid-column: 6 / 7;
-}
-
-
-/* TIMELINE EVENT PLACEMENT - TIMELINE 03 */
-
-.timeline3_img1,
-.timeline3_text1 {
-    grid-row: 1 / 2;
-}
-
-.timeline3_img1,
-.timeline3_img2 {
-    grid-column: 1 / 3;
-}
-
-.timeline3_text1,
-.timeline3_text2 {
-    grid-column: 3 / 4;
-}
-
-.timeline3_img2,
-.timeline3_text2 {
-    grid-row: 2 / 3;
-}
-
-.timeline3_img3,
-.timeline3_text3 {
-    grid-row: 1 / 3;
-}
-
-.timeline3_img3 {
-    grid-column: 4 / 6;
-}
-
-.timeline3_text3 {
-    grid-column: 6 / 7;
-}
-
-
-/* TIMELINE EVENT PLACEMENT - TIMELINE 04 */
-
-.timeline4_img1,
-.timeline4_img2,
-.timeline4_img3 {
-    grid-row: 1 / 2;
-}
-
-.timeline4_text1,
-.timeline4_text2,
-.timeline4_text3 {
-    grid-row: 2 / 3;
-}
-
-.timeline4_img1,
-.timeline4_text1 {
-    grid-column: 1 / 3;
-}
-
-.timeline4_img2,
-.timeline4_text2 {
-    grid-column: 3 / 5;
-}
-
-.timeline4_img3,
-.timeline4_text3 {
-    grid-column: 5 / 7;
+    .history_summary p,
+    .history_summary p span {
+        /* Line height adjusted to be even for differently sized text */
+        line-height: 48px;
+    }
+    .timeline1 {
+        grid-template-rows: minmax(400px, auto);
+    }
+    .timeline2 {
+        grid-template-rows: minmax(800px, auto);
+    }
+    .timeline3 {
+        grid-template-rows: minmax(600px, auto);
+    }
+    .timeline4 {
+        grid-template-rows: minmax(750px, auto);
+    }
 }
