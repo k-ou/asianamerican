@@ -27,7 +27,7 @@
     /* Heading for section */
     #history_title h2 {
         text-align: right;
-        font-size: 200px;
+        font-size: 60px;
     }
     /* Entire section following header */
     #history {
@@ -41,16 +41,16 @@
     }
     /* The heading preceding each main section */
     .year {
-        font-size: 136px;
+        font-size: 80px;
         color: #FFD000;
     }
     #history h3 {
         font-family: "Teko", sans-serif;
-        font-size: 48px;
+        font-size: 36px;
         position: absolute;
-        top: 10px;
-        left: 20px;
-        line-height: 44px;
+        top: 50px;
+        left: 35px;
+        line-height: 34px;
         z-index: 100;
     }
     /* Gives space on left and right side of event name with highlighted look */
@@ -64,7 +64,7 @@
     .history3,
     .history4,
     .history5 {
-        height: 83vh;
+        height: 50vh;
     }
     .history1 {
         background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
@@ -107,18 +107,14 @@
     /* TIMELINE GRID */
     .history_timeline {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        /*        grid-template-rows: repeat(12, 200px);*/
+        grid-auto-rows: 200px;
         /*    grid-auto-rows: 400px;*/
         width: 100%;
         grid-gap: 20px;
         /*    grid-auto-flow: column;*/
-        grid-template-rows: minmax(240px, auto);
-    }
-    .timeline2 {
-        grid-template-rows: minmax(600px, auto);
-    }
-    .timeline4 {
-        grid-template-rows: minmax(475px, auto);
+        /*        grid-template-rows: minmax(240px, auto);*/
     }
     /* Title of timeline event */
     .timeline_textbox {
@@ -272,6 +268,137 @@
         color: white;
     }
     /* TIMELINE EVENT PLACEMENT - TIMELINE 01 */
+    .timeline1_img1 {
+        grid-row: 1 / 2;
+    }
+    .timeline1_text1 {
+        grid-row: 2 / 3;
+    }
+    .timeline1_img2 {
+        grid-row: 3 / 4;
+    }
+    .timeline1_text2 {
+        grid-row: 4 / 5;
+    }
+    .timeline1_img3 {
+        grid-row: 5 / 6;
+    }
+    .timeline1_text3 {
+        grid-row: 6 / 7;
+    }
+    .timeline1_img4 {
+        grid-row: 7 / 8;
+    }
+    .timeline1_text4 {
+        grid-row: 8 / 9;
+    }
+    /* TIMELINE EVENT PLACEMENT - TIMELINE 02 */
+    .timeline2_img1 {
+        grid-row: 1 / 3;
+    }
+    .timeline2_text1 {
+        grid-row: 3 / 4;
+    }
+    .timeline2_img2 {
+        grid-row: 4 / 6;
+    }
+    .timeline2_text2 {
+        grid-row: 6 / 7;
+    }
+    /* TIMELINE EVENT PLACEMENT - TIMELINE 03 */
+    .timeline3_img1 {
+        grid-row: 1 / 2;
+    }
+    .timeline3_text1 {
+        grid-row: 2 / 3;
+    }
+    .timeline3_img2 {
+        grid-row: 3 / 4;
+    }
+    .timeline3_text2 {
+        grid-row: 4 / 5;
+    }
+    .timeline3_img3 {
+        grid-row: 5 / 7;
+    }
+    .timeline3_text3 {
+        grid-row: 7 / 8;
+    }
+    /* TIMELINE EVENT PLACEMENT - TIMELINE 04 */
+    .timeline4_img1 {
+        grid-row: 1 / 3;
+    }
+    .timeline4_text1 {
+        grid-row: 3 / 4;
+    }
+    .timeline4_img2 {
+        grid-row: 4 / 6;
+    }
+    .timeline4_text2 {
+        grid-row: 6 / 7;
+    }
+    .timeline4_img3 {
+        grid-row: 7 / 9;
+    }
+    .timeline4_text3 {
+        grid-row: 9 / 10;
+    }
+}
+
+
+/* Small screens */
+
+@media only screen and (min-width: 1024px) {
+    /* Heading for section */
+    #history_title h2 {
+        font-size: 200px;
+    }
+    /* The heading preceding each main section */
+    .year {
+        font-size: 136px;
+    }
+    #history h3 {
+        font-size: 48px;
+        top: 10px;
+        left: 20px;
+    }
+    /* Summary sections for the historical timeline events. */
+    .history_summary {
+        /* Width of the text box (relation to width of screen) */
+        width: 70%;
+        /* Indent from top and bottom */
+        padding: 60px 0px 0px 60px !important;
+    }
+    .history_summary p {
+        font-size: 18px;
+    }
+    .history_summary p,
+    .history_summary p span {
+        /* Line height adjusted to be even for differently sized text */
+        line-height: 30px;
+    }
+    .history_timeline {
+        margin: 100px 0px;
+        /*        height: 50vh;*/
+        /*        height: 1200px;*/
+    }
+    /* TIMELINE GRID */
+    .history_timeline {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        /*    grid-auto-rows: 400px;*/
+        width: 100%;
+        grid-gap: 20px;
+        /*    grid-auto-flow: column;*/
+        grid-template-rows: minmax(240px, auto);
+    }
+    .timeline2 {
+        grid-template-rows: minmax(600px, auto);
+    }
+    .timeline4 {
+        grid-template-rows: minmax(475px, auto);
+    }
+    /* TIMELINE EVENT PLACEMENT - TIMELINE 01 */
     .timeline1_img1,
     .timeline1_text1 {
         grid-row: 1 / 3;
@@ -368,33 +495,16 @@
     }
 }
 
-
-/* Small screens */
-
-@media only screen and (min-width: 1024px) {
-    /* Summary sections for the historical timeline events. */
-    .history_summary {
-        /* Width of the text box (relation to width of screen) */
-        width: 70%;
-        /* Indent from top and bottom */
-        padding: 60px 0px 0px 60px !important;
-    }
-    .history_summary p {
-        font-size: 18px;
-    }
-    .history_summary p,
-    .history_summary p span {
-        /* Line height adjusted to be even for differently sized text */
-        line-height: 30px;
-    }
-    .history_timeline {
-        margin: 100px 0px;
-        /*        height: 50vh;*/
-        /*        height: 1200px;*/
-    }
-}
-
 @media only screen and (min-width: 1440px) {
+    /* The main history sections (with the hero images) */
+    .history1,
+    .history2,
+    .history3,
+    .history4,
+    .history5 {
+        height: 83vh;
+    }
+    /* Summary sections for the historical timeline events. */
     .history_summary {
         width: 70%;
         padding: 80px 0px 0px 140px !important;

@@ -17,7 +17,7 @@
     }
     /* Highlighted text is changed. */
     /* Currently: bliack highlighted with red. */
-    ::-moz-selection {
+     ::-moz-selection {
         color: white;
         background: #ff4d3b;
         /*
@@ -25,7 +25,7 @@
         background: #ffd000;
 */
     }
-    ::selection {
+     ::selection {
         color: white;
         background: #ff4d3b;
         /*
@@ -43,6 +43,7 @@
 
 
 /* parallax */
+
 
 /* all layers */
 
@@ -342,13 +343,7 @@ ul {
 }
 
 
-
-
 /* "The Asian-American Fight for Cultural Citizenship" */
-
-#title_container {
-    height: 300vh;
-}
 
 #title {
     background-color: #FFD000;
@@ -391,67 +386,55 @@ ul {
     background-color: #FFD000;
 }
 
+
 /* Mobile screens */
 
 @media only screen and (min-width: 320px) {
-
-    .no-gutter > [class*='col-'] {
+    .no-gutter>[class*='col-'] {
         padding-right: 0;
         padding-left: 0;
     }
-
     h2 {
         font-family: 'Teko', sans-serif;
         font-size: 48px;
     }
-
     h3:not(div#quotes h3) {
         font-family: 'Montserrat', sans-serif;
     }
-
     a {
         text-decoration: none;
     }
-
     p {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
     }
-
     .container-fluid {
         padding: 0px;
         overflow: hidden;
     }
-
     .container-fluid.falling {
         background-color: black;
     }
-
     .row {
         margin: 0px;
     }
-
     .section {
         position: relative;
     }
-
     .section .highlight {
         background-color: #FFD000;
     }
-
     #history,
     #now,
     #support {
         padding: 50px;
     }
-
     /* HEADER */
     .header {
         color: black;
         overflow: hidden;
         height: 100vh;
     }
-
     .header_bg {
         position: absolute;
         top: 0;
@@ -466,7 +449,6 @@ ul {
         background-size: cover;
         height: 100%;
     }
-
     .header_text {
         position: relative;
         height: 100%;
@@ -480,18 +462,19 @@ ul {
         text-transform: uppercase;
         font-family: 'Teko', sans-serif;
     }
-
     .header_text h1 {
         margin: 0px;
         font-size: 9.5vw;
     }
-
+    /* "The Asian-American Fight for Cultural Citizenship" */
+    #title_container {
+        /*    height: 300vh;*/
+    }
     /* VIDEO */
     .video_box {
         overflow: hidden;
         height: 100vh;
     }
-
     .video_box iframe {
         min-width: 100%;
         min-height: 100%;
@@ -499,14 +482,11 @@ ul {
         height: auto;
         z-index: -100;
     }
-
-
     /* FOOTER */
     .footer {
         background-color: #FFD000;
         height: 200px;
     }
-
     .footer a {
         height: 100%;
         width: 100%;
@@ -514,24 +494,20 @@ ul {
         align-items: center;
         justify-content: center;
     }
-
     .credit {
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     .credit p {
         text-align: center;
     }
-
     .backtotop {
         height: 40px;
         bottom: 0;
         position: absolute;
     }
-
     .top {
         background-color: black;
         color: white;
@@ -542,8 +518,8 @@ ul {
         justify-content: center;
         align-items: center;
     }
-
 }
+
 
 /* Small screens */
 
@@ -580,6 +556,10 @@ ul {
     }
     .title_box2 h2 {
         font-size: 180px;
+    }
+    /* "The Asian-American Fight for Cultural Citizenship" */
+    #title_container {
+        height: 300vh;
     }
 }
 
