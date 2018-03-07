@@ -213,6 +213,9 @@
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
+.timeline_caption::-webkit-scrollbar {
+    background-color: transparent;
+}
 
 .timeline_img {
     position: relative;
