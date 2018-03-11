@@ -149,244 +149,6 @@ div#parallax-bg-3 div:nth-child(6) {
 }
 
 
-/*****************************************/
-
-html * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-
-/*** Meklit ***/
-
-.nav {
-    position: relative;
-    width: 10em;
-}
-
-.nav__item {
-    line-height: 1.2;
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 0;
-    color: currentColor;
-    border: 0;
-    background: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.nav__item:focus {
-    outline: none;
-}
-
-#Meklit {
-    position: fixed;
-    z-index: 50;
-}
-
-.nav--meklit {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-content: stretch;
-    align-content: stretch;
-    height: 100vh;
-    margin: 0;
-}
-
-.nav--meklit .nav__item {
-    -webkit-flex: 1;
-    flex: 1;
-    width: 10em;
-    height: 100%;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-.nav--meklit .nav__item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-    background: #141417;
-    -webkit-transform: scale3d(0.15, 1, 1);
-    transform: scale3d(0.15, 1, 1);
-    -webkit-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
-    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-
-.nav--meklit .nav__item:nth-child(odd)::before {
-    background: #0a0a0c;
-}
-
-.nav--meklit .nav__item:hover::before {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-}
-
-
-/*new*/
-
-.nav--meklit .nav__item:hover .nav__item-title span {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-
-/**/
-
-.section#Meklit .nav--meklit .nav__item--current::before {
-    background: #ff4d3b;
-    color: black;
-}
-
-.nav--meklit a {
-    height: 20%;
-    text-decoration: none;
-    color: white;
-}
-
-.nav--meklit .nav__item-title {
-    font-size: 2em;
-    font-weight: bold;
-    display: block;
-    overflow: hidden;
-    text-align: center;
-    white-space: nowrap;
-    pointer-events: none;
-    /*
-    -webkit-transform: rotate3d(0, 0, 1, -90deg);
-    transform: rotate3d(0, 0, 1, -90deg);
-*/
-}
-
-.nav--meklit .nav__item-title span {
-    font-family: 'Teko', sans-serif;
-    font-weight: 300;
-    display: block;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-
-.section#Meklit {
-    background: #27272b;
-    color: #ff4d3b;
-    min-height: 510px;
-}
-
-#nav4 {
-    display: inline-block;
-}
-
-
-/* Move it (define the animation) */
-
-@-moz-keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-    }
-    100% {
-        -moz-transform: translateX(-100%);
-    }
-}
-
-@-webkit-keyframes scroll-left {
-    0% {
-        -webkit-transform: translateX(100%);
-    }
-    100% {
-        -webkit-transform: translateX(-100%);
-    }
-}
-
-@keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-        /* Browser bug fix */
-        -webkit-transform: translateX(100%);
-        /* Browser bug fix */
-        transform: translateX(100%);
-    }
-    100% {
-        -moz-transform: translateX(-100%);
-        /* Browser bug fix */
-        -webkit-transform: translateX(-100%);
-        /* Browser bug fix */
-        transform: translateX(-100%);
-    }
-}
-
-
-/* "The Asian-American Fight for Cultural Citizenship" */
-
-#title {
-    background-color: #FFD000;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#title div {
-    font-family: 'Teko', sans-serif;
-    width: 100%;
-    text-align: center;
-    margin: 0px;
-    color: black;
-    padding: 0px;
-}
-
-
-/*
-.title_box1 controls "The"
-.title_box1 controls "Asian-American"
-.title_box1 controls "Fight for Cultural Citizenship"
-*/
-
-.title_box1,
-.title_box2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.title_box2 h2 {
-    text-transform: uppercase;
-    color: #FFD000;
-}
-
-.title_box3 {
-    background-color: #FFD000;
-}
-
-
 /* Mobile screens */
 
 @media only screen and (min-width: 320px) {
@@ -469,6 +231,41 @@ ul {
     /* "The Asian-American Fight for Cultural Citizenship" */
     #title_container {
         /*    height: 300vh;*/
+    }
+    /* "The Asian-American Fight for Cultural Citizenship" */
+    #title {
+        background-color: #FFD000;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #title div {
+        font-family: 'Teko', sans-serif;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        color: black;
+        padding: 0px;
+    }
+    /*
+.title_box1 controls "The"
+.title_box1 controls "Asian-American"
+.title_box1 controls "Fight for Cultural Citizenship"
+*/
+    .title_box1,
+    .title_box2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .title_box2 h2 {
+        text-transform: uppercase;
+        color: #FFD000;
+    }
+    .title_box3 {
+        background-color: #FFD000;
     }
     /* VIDEO */
     .video_box {
