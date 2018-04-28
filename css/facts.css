@@ -115,12 +115,17 @@ p.attribution {
     align-items: center;
 }
 
+/*
 .response1,
 .response2,
 .response3,
 .response5 {
+*/
+
+#quotes h3 {
     font-family: 'Teko', sans-serif;
     color: white;
+    line-height: 1.1;
 }
 
 .response1 div {

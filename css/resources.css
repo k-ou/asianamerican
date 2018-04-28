@@ -12,6 +12,9 @@
 
 .resources h3 {
     font-size: 42px;
+    width: 100%;
+    font-family: 'Teko';
+    color: white;
 }
 
 .resources a {
