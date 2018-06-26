@@ -129,8 +129,10 @@ p.attribution {
 }
 
 .response1 div {
+/*
     min-width: 300px;
     width: 100px;
+*/
 }
 
 .response1 h3,
