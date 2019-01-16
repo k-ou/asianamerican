@@ -81,7 +81,7 @@
         height: 50vh;
     }
     .history1 {
-        background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://www.oldpicz.com/picz/2016/04/California-Gold-Rush-1848-12.jpg");
+        background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("https://upload.wikimedia.org/wikipedia/commons/c/ca/Placer_gold-mining,_Korea,_c1900.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -98,6 +98,14 @@
     }
     .history3 {
         background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://i.vimeocdn.com/video/444419420_1280x720.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover, cover;
+        background-position: center;
+    }
+    .history4 {
+        background: linear-gradient(rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.2)), url("http://mediad.publicbroadcasting.net/p/krwg/files/styles/x_large/public/201511/japanese_internment.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -193,7 +201,7 @@
         transition: all 0.4s ease-in-out;
     }
     .timeline1_img1 {
-        background-image: url("http://www.usnook.com/uploads/allimg/131024/50-131024130953B8.png");
+        background-image: url("../img/asam-crime.jpg");
     }
     .timeline1_img2 {
         background-image: url("http://farm3.staticflickr.com/2474/3975812755_84da2936ca.jpg");
